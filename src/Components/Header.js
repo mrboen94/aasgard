@@ -14,11 +14,12 @@ const ButtonGrid = styled(Grid)``;
 
 const StyledDiv = styled.div`
   background-color: Gainsboro;
+  box-shadow: inset 0 -10em 10em white;
 `;
 
 const ButtonDiv = styled.div`
   padding: 1em;
-  background-color: lightGray;
+  background-color: lightgray;
 `;
 
 export default function Header() {
