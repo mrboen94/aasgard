@@ -1,5 +1,5 @@
 export default function sketch(p) {
-  const canvas = 150;
+  const canvas = 200;
   const cx = canvas / 2;
   const terninger = 3;
   let timer = 0;
@@ -21,9 +21,10 @@ export default function sketch(p) {
     p.rotateX(perspektiv);
     p.rotateY(p.QUARTER_PI);
 
-    p.noFill();
+    //  p.noFill();
+    p.fill(100, 100, 100, 100 / terninger + terninger * 10);
     p.stroke(200);
-    p.strokeWeight(2);
+    p.strokeWeight(0);
 
     for (let i = terninger; i > 0; i--) {
       p.push();
@@ -36,9 +37,9 @@ export default function sketch(p) {
       const rotering = easeInOutQuart(mappedPos, 0, 1, 1);
       p.rotateY(rotering * p.PI);
 
-      p.stroke(150, 20, ((terninger - i) / terninger) * 200 + 200);
+      p.stroke(256, 256, ((terninger - i) / terninger) * 256 + 100);
 
-      p.box(i * 20 + 20);
+      p.box(i * 30 + 30);
       p.pop();
     }
     timer += 0.1;
