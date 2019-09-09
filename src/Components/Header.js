@@ -4,6 +4,7 @@ import P5Wrapper from "react-p5-wrapper";
 import { sketch } from "./Sketches";
 import { Grid, Typography, Button } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HomeBody, ProjectsBody, ContactBody, AboutBody } from "./Pages";
 
 const StyledGrid = styled(Grid)`
   padding: 1em;
@@ -62,59 +63,17 @@ export default function Header() {
 }
 
 function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
+  return <HomeBody />;
 }
 
 function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
+  return <AboutBody />;
 }
 
 function Projects({ match }) {
-  return (
-    <div>
-      <h2>Topics</h2>
-      <ul>
-        <li>
-          <Link to={`${match.url}/rendering`}>Rendering with React</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/components`}>Components</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-        </li>
-      </ul>
-
-      <Route path={`${match.path}/:topicId`} component={Project} />
-      <Route
-        exact
-        path={match.path}
-        render={() => <h3>Please select a topic.</h3>}
-      />
-    </div>
-  );
-}
-
-function Project({ match }) {
-  return (
-    <div>
-      <h3>{match.params.topicId}</h3>
-    </div>
-  );
+  return <ProjectsBody />;
 }
 
 function Contact() {
-  return (
-    <div>
-      <h3>Contact</h3>
-    </div>
-  );
+  return <ContactBody />;
 }
