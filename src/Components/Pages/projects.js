@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Typography, createMuiTheme } from "@material-ui/core";
+import { Typography, createMuiTheme, Grid } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/styles";
+import PROJECTS from "../Data/projects";
+import { ProjectCard } from "..";
 
 const StyledDiv = styled.div`
   padding: 1em;
@@ -22,13 +24,21 @@ const theme = createMuiTheme({
 });
 
 export default function HomeBody() {
+  const projects = PROJECTS;
   return (
     <StyledDiv>
+      <Grid
+        container
+        direction="row"
+        justify="space-evenly"
+        alignItems="center"
+      >
+        {projects.map(project => (
+          <ProjectCard data={project} />
+        ))}
+      </Grid>
       <ThemeProvider theme={theme}>
-        <Typography color="primary">
-          Some of my projects can be found at{" "}
-          <a href="https://github.com/mrboen94">my github.</a>
-        </Typography>
+        <Typography color="primary"></Typography>
       </ThemeProvider>
     </StyledDiv>
   );

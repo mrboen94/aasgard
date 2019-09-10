@@ -44,6 +44,11 @@ const theme = createMuiTheme({
         color: "white",
         height: 38,
         padding: "0 30px"
+      },
+      root: {
+        "&:hover": {
+          backgroundColor: "#61892F"
+        }
       }
     }
   }

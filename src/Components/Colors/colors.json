@@ -1,7 +1,13 @@
-color: {
-    heading: #ffffff
-    subtext: #6B6E70
-    background: #222629
-    button-background: #86C232
-    navigation: #61892F
+{
+    "colors":
+    [
+        {
+        "heading": "#ffffff",
+        "subtext": "#6B6E70",
+        "background": "#222629",
+        "subsubtext": "#474B4F",
+        "button-background": "#86C232",
+        "navigation": "#61892F"
+        }
+    ]
 }
