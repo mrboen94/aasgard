@@ -19,7 +19,7 @@ const StyledDiv = styled.div`
 `;
 
 const ButtonDiv = styled.div`
-  padding: 0.3em 20%;
+  padding: 0.3em;
   background-color: #86c232;
 `;
 
@@ -71,7 +71,7 @@ export default function Header() {
             </Typography>
           </StyledGrid>
           <ButtonDiv>
-            <ButtonGrid container justify="space-between">
+            <ButtonGrid container justify="space-evenly">
               <Link to="/">
                 <Button color>Home</Button>
               </Link>
