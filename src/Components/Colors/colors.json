@@ -1,0 +1,7 @@
+color: {
+    heading: #ffffff
+    subtext: #6B6E70
+    background: #222629
+    button-background: #86C232
+    navigation: #61892F
+}

@@ -5,6 +5,8 @@ import { sketch } from "./Sketches";
 import { Grid, Typography, Button } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { HomeBody, ProjectsBody, ContactBody, AboutBody } from "./Pages";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
 
 const StyledGrid = styled(Grid)`
   padding: 1em;
@@ -13,52 +15,83 @@ const StyledGrid = styled(Grid)`
 const ButtonGrid = styled(Grid)``;
 
 const StyledDiv = styled.div`
-  background-color: Gainsboro;
-  box-shadow: inset 0 -10em 10em white;
+  background-color: #222629;
 `;
 
 const ButtonDiv = styled.div`
-  padding: 1em;
-  background-color: lightgray;
+  padding: 0.3em;
+  background-color: #86c232;
 `;
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      // light: will be calculated from palette.primary.main,
+      main: "#ffffff"
+      // dark: will be calculated from palette.primary.main,
+      // contrastText: will be calculated to contrast with palette.primary.main
+    }
+    // error: will use the default color
+  },
+  overrides: {
+    // Style sheet name ⚛️
+    MuiButton: {
+      // Name of the rule
+      text: {
+        // Some CSS
+        background: "#86C232",
+        border: 0,
+        color: "white",
+        height: 38,
+        padding: "0 30px"
+      }
+    }
+  }
+});
 
 export default function Header() {
   return (
     <Router>
-      <StyledDiv>
-        <StyledGrid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-        >
-          <Typography variant="h6">Welcome to Aasgard!</Typography>
-          <Route path="/" exact component={null}>
-            <P5Wrapper sketch={sketch} />
-          </Route>
-          <Typography variant="h6">A website by Mathias Bøe</Typography>
-        </StyledGrid>
-        <ButtonDiv>
-          <ButtonGrid container direction="row" alignItems="center">
+      <ThemeProvider theme={theme}>
+        <StyledDiv>
+          <StyledGrid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+          >
+            <Typography color="primary" variant="h5">
+              Welcome to Aasgard!
+            </Typography>
             <Link to="/">
-              <Button>Home</Button>
+              <P5Wrapper sketch={sketch} />
             </Link>
-            <Link to="/about">
-              <Button>About</Button>
-            </Link>
-            <Link to="/projects">
-              <Button>Projects</Button>
-            </Link>
-            <Link to="/contact">
-              <Button>Contact</Button>
-            </Link>
-          </ButtonGrid>
-        </ButtonDiv>
-      </StyledDiv>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/contact" component={Contact} />
+            <Typography variant="h5" color="primary">
+              A website by Mathias Bøe
+            </Typography>
+          </StyledGrid>
+          <ButtonDiv>
+            <ButtonGrid container justify="space-evenly">
+              <Link to="/">
+                <Button color>Home</Button>
+              </Link>
+              <Link to="/about">
+                <Button>About</Button>
+              </Link>
+              <Link to="/projects">
+                <Button>Projects</Button>
+              </Link>
+              <Link to="/contact">
+                <Button>Contact</Button>
+              </Link>
+            </ButtonGrid>
+          </ButtonDiv>
+        </StyledDiv>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+      </ThemeProvider>
     </Router>
   );
 }

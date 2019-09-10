@@ -7,7 +7,6 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <p>Hello World!</p>
       </div>
     </Router>
   );
