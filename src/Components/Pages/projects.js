@@ -8,7 +8,6 @@ import { ProjectCard } from "..";
 const StyledDiv = styled.div`
   padding: 1em;
   background-color: #222629;
-  height: 100vh;
 `;
 
 const theme = createMuiTheme({

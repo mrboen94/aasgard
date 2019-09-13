@@ -11,8 +11,8 @@ import { ThemeProvider } from "@material-ui/styles";
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: "25%",
-    minWidth: "25%"
+    maxWidth: "100vw",
+    minWidth: "40vw"
   },
   media: {
     height: 100,
