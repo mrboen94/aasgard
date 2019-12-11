@@ -1,18 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import { AboutMe, Experience, Education, Knowledge } from "../";
 
 const StyledDiv = styled.div`
   padding: 1em;
   background-color: #ffffff;
-  height: 100vh;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 export default function HomeBody() {
   return (
     <StyledDiv>
-        <h1>
-          This is the HomeBody text...
-        </h1>
+      <AboutMe />
+      <Experience />
+      <Education />
+      <Knowledge />
     </StyledDiv>
   );
 }
