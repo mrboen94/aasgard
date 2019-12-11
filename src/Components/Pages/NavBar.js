@@ -5,8 +5,8 @@ import { Info, ImageWrapper, Interests, Contact, Socials } from "../";
 const StyledDiv = styled.div`
   padding: 1em;
   background-color: #e2e2e2;
-  height: 100vh;
-  width 17em;
+  height: 100%;
+  width 14em;
   margin-left: 0;
 `;
 
