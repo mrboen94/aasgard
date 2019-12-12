@@ -1,0 +1,21 @@
+{
+    "Experience": [
+    {
+        "Title": "JUNIOR DEVELOPER", 
+        "Company": "SBANKEN, BERGEN",
+        "Description": "Working mostly with front end and React.js, some backend",
+        "Year": "2019"
+    },
+    {
+        "Title": "SUBSTITUTE PROJECT LEADER",
+        "Company": "STRYVO, STRYN",
+        "Description": "Project lead for the award winning steel bridge at Sognefjellet",
+        "Year": "2018"
+    },
+    {
+        "Title": "DOCUMENTATION",
+        "Company": "STRYVO, STRYN",
+        "Description": "Provided documentation for oil and gas from Stryvo.",
+        "Year": "2017"
+    }]
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ExperienceCard } from "./SubComponents";
 
 const StyledDiv = styled.div`
   padding: 1em;
@@ -10,13 +11,8 @@ const StyledDiv = styled.div`
 export default function Experience() {
   return (
     <StyledDiv>
-        <h2>Experience:</h2>
-        <p>Im a ya boi, a nerd lorem hipsum schmipzum zzzzzzzzzzz zzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzz zzzzzzzz z zzzzzzzz zzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzz zzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzz
-        </p>
+      <ExperienceCard />
         <hr />
-        
     </StyledDiv>
   );
 }

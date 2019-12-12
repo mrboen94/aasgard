@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { AboutMeBars } from "./SubComponents";
 
 const StyledDiv = styled.div`
-  padding: 1em;
+  padding: 1em 1em 2em 0;
   background-color: #ffffff;
   height: 100vh;
+  border-bottom: 2px solid;
 `;
 
 export default function AboutMe() {
@@ -18,8 +20,7 @@ export default function AboutMe() {
           zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
           zzzzzzzzzzzzzzzzzzzzzzzzz
         </p>
-        <hr />
-        
+          <AboutMeBars />
     </StyledDiv>
   );
 }
