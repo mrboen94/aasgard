@@ -15,7 +15,7 @@ export default function AboutMeBars() {
         <ProgressBar percentage={"80%"} skill={"CREATIVITY"} />
         <ProgressBar percentage={"75%"} skill={"TEAMWORK"} />
         <ProgressBar percentage={"90%"} skill={"LEADERSHIP"} />
-        <ProgressBar percentage={"60%"} skill={"ORGANISATIONAL WORK"} />
+        <ProgressBar percentage={"60%"} skill={"ORGANIZATIONAL WORK"} />
     </StyledProgressBar>
   );
 }
