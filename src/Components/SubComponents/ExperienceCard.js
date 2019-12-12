@@ -7,7 +7,6 @@ const StyledDiv = styled.div`
     flex: 10 5;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: left;
 `;
 
 const StyledCols = styled.div`
@@ -18,7 +17,7 @@ const StyledCols = styled.div`
 `;
 
 const ArrowDiv = styled.div`
-    margin-top: 0.3em;
+    padding-top: 20px;
     display: flex;
     height: 20px;
     height: 20px;
@@ -66,11 +65,34 @@ const StyledYearArrow = styled.div`
 `;
 
 const StyledBorderDiv = styled.div`
-    width: 20%
+    margin-top: 23px;
+    justify-content: left;
+    padding-left: 3em;
+    padding-right: 3em;
 `;
 
 const StyledTextDiv = styled.div`
-    height: 80px;
+    height: 100px;
+`;
+
+const Line = styled.div`
+    margin-left: 3px;
+    position: absolute;
+    width:  4px;
+    height: 100px;
+    margin-top: 1px;
+    background-color: #2e2e2e;
+`;
+
+const Circle = styled.div`
+    position: absolute;
+    margin-left: -2px;
+    z-index: 2;
+    background-color: #2e2e2e;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
 `;
 
 const experience = data.Experience;
@@ -87,7 +109,10 @@ export default function ExperienceCard() {
                 </StyledYear>
                 <StyledYearArrow />
             </ArrowDiv>
-            <StyledBorderDiv />
+            <StyledBorderDiv>
+                <Circle />
+                <Line />
+            </StyledBorderDiv>
             <StyledTextDiv>
                 <StyledH2>{data.Title}</StyledH2>
                 <StyledH3>{data.Company}</StyledH3>

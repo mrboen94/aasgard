@@ -21,10 +21,10 @@ const Tracker = styled.div`
     margin: 15px auto;
     background: repeating-linear-gradient(
         30deg,
-        #2e2e2e,
-        #2e2e2e 3px,
+        #fff 1px,
         #fff 4px,
-        #fff 7px
+        #2e2e2e 5px,
+        #2e2e2e 10px
     );
     border-radius: 10px;
 `;

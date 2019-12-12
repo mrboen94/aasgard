@@ -6,7 +6,6 @@ const StyledDiv = styled.div`
   padding: 1em 1em 2em 0;
   background-color: #ffffff;
   height: 100vh;
-  border-bottom: 2px solid;
 `;
 
 export default function AboutMe() {

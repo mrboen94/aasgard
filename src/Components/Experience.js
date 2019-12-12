@@ -11,8 +11,8 @@ const StyledDiv = styled.div`
 export default function Experience() {
   return (
     <StyledDiv>
+      <h2>Experience:</h2>
       <ExperienceCard />
-        <hr />
     </StyledDiv>
   );
 }
