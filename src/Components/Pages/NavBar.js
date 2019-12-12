@@ -6,6 +6,7 @@ const StyledDiv = styled.div`
   padding: 1em;
   background-color: #e2e2e2;
   height: 100vh;
+  min-height: 1200px;
   width 14em;
   margin-left: 0;
 `;
