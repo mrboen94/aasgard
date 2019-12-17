@@ -14,7 +14,7 @@ export default function AboutMe() {
         <StyledText h1 b>
           Mathias Bøe
         </StyledText>
-        <StyledText h2>About Me:</StyledText>
+        <StyledText h2 b>About Me:</StyledText>
         <StyledText p>Im a ya boi, a nerd lorem hipsum schmipzum zzzzzzzzzzz zzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzz zzzzzzzz z zzzzzzzz zzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzz zzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
           zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
           zzzzzzzzzzzzzzzzzzzzzzzzz
