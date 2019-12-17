@@ -1,21 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import { KnowledgeCard } from "./SubComponents";
+import { StyledText } from "./SubComponents";
+import data from "./Data/data.json";
 
 const StyledDiv = styled.div`
-  padding: 1em;
-  background-color: #ffffff;
-  height: 100vh;
+  display: flex;
+  flex-direction: columns;
+  flex-wrap: wrap;
 `;
+
+const knowledge = data.Knowledge;
 
 export default function Knowledge() {
   return (
-    <StyledDiv>
-        <h2>Knowledge:</h2>
-        <p>Im so sorry mom, there is nothing here... :( Are you proud of me now? :o  zzzzzzzzzzzzzzzz zzzzzzzz z zzzzzzzz zzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzz zzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzz
-        </p>
-        <hr />
-    </StyledDiv>
+    <>
+      <StyledText h1 b>Knowledge:</StyledText>
+      <StyledDiv>
+        {knowledge.map(data => (
+        <KnowledgeCard skill={data.Title} percentage={data.Percent} /> 
+        ))}
+      </StyledDiv>
+    </>
   );
 }

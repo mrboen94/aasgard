@@ -1,34 +1,30 @@
 import React from "react";
 import styled from "styled-components";
-
-const StyledP = styled.p`
-  text-align: center;
-  color: #fff;
-`;
+import StyledText from "./StyledText";
 
 const StyledGrid = styled.div`
   display: flex;
   flex: 4 10 2;
-  margin: 1em;
+  margin: 1em 0 1em 0;
   justify-contents: left;
   height: 0px;
   padding-bottom: 26px;
 `;
 
 const StyledTextGrid = styled.div`
-  width: 28%;
+  width: 24%;
 `;
 
 const Tracker = styled.div`
     width 60%;
     height 20px;
-    margin: 15px auto;
+    margin: 2px auto;
     background: repeating-linear-gradient(
         30deg,
         #fff 1px,
-        #fff 4px,
-        #2e2e2e 5px,
-        #2e2e2e 10px
+        #fff 3px,
+        #2e2e2e 4px,
+        #2e2e2e 6px
     );
     border-radius: 10px;
 `;
@@ -44,20 +40,22 @@ const ProgressInTracker = styled.div`
     border-radius: 10px 0 0 10px;
 `;
 
-export default function ProgressBar({ percentage, skill }) {
+export default function ProgressBar({ percentage, skill, visual}) {
   return (
     <StyledGrid>
       <StyledTextGrid>
-        <p>
-          <b>{skill}</b>
-        </p>
+        <StyledText p b>
+          {skill}
+        </StyledText>
       </StyledTextGrid>
       <Tracker>
         <ProgressInTracker percentage={percentage} />
       </Tracker>
-      <p>
-        <b>{percentage}</b>
-      </p>
+      {visual &&
+      <StyledText p b>
+        {percentage}
+      </StyledText>
+      }
     </StyledGrid>
   );
 }

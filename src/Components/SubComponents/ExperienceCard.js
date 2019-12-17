@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import data from "../Data/data.json";
+import StyledText from "./StyledText";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -22,30 +23,6 @@ const ArrowDiv = styled.div`
   height: 20px;
   height: 20px;
   width: 110px;
-`;
-
-const StyledH2 = styled.h2`
-  font-size: 1.5em;
-  text-align: left;
-  color: #2e2e2e;
-  padding: 0px;
-  margin: 0px;
-`;
-
-const StyledH3 = styled.h3`
-  font-size: 0.8em;
-  text-align: left;
-  color: #2e2e2e;
-  padding: 0px;
-  margin: 0px;
-`;
-
-const StyledP = styled.p`
-  font-size: 0.8em;
-  text-align: left;
-  color: #2e2e2e;
-  padding: 0px;
-  margin: 0px;
 `;
 
 const StyledYear = styled.div`
@@ -112,9 +89,9 @@ export default function ExperienceCard() {
             <Line />
           </StyledBorderDiv>
           <StyledTextDiv>
-            <StyledH2>{data.Title}</StyledH2>
-            <StyledH3>{data.Company}</StyledH3>
-            <StyledP>{data.Description}</StyledP>
+            <StyledText h2 b>{data.Title}</StyledText>
+            <StyledText h3 b>{data.Company}</StyledText>
+            <StyledText p>{data.Description}</StyledText>
           </StyledTextDiv>
         </StyledCols>
       ))}

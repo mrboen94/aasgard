@@ -16,7 +16,7 @@ export default function AboutMeBars() {
     <>
       {aboutMe.map(data => (
         <StyledProgressBar>
-          <ProgressBar percentage={data.Percent} skill={data.Title} />
+          <ProgressBar percentage={data.Percent} skill={data.Title} visual />
         </StyledProgressBar>
       ))}
     </>

@@ -50,5 +50,31 @@
             "Title": "ORGANIZATIONAL WORK",
             "Percent": "65%"
         }
+    ],
+    "Knowledge": [
+        {
+            "Title": "JAVA",
+            "Percent": "80%"
+        },
+        {
+            "Title": "REACT",
+            "Percent": "75%"
+        },
+        {
+            "Title": "PROCESSING",
+            "Percent": "60%"
+        },
+        {
+            "Title": "MS OFFICE",
+            "Percent": "90%"
+        },
+        {
+            "Title": "DESIGN",
+            "Percent": "85%"
+        },
+        {
+            "Title": "LaTeX",
+            "Percent": "65%"
+        }
     ]
 }
