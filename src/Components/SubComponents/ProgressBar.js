@@ -13,6 +13,7 @@ const StyledGrid = styled.div`
 
 const StyledTextGrid = styled.div`
   width: 24%;
+  margin-right: 1em;
 `;
 
 const Tracker = styled.div`
