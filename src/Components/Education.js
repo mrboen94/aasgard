@@ -1,21 +1,36 @@
 import React from "react";
 import styled from "styled-components";
+import { EducationCard } from "./SubComponents";
+import data from "./Data/data";
+import StyledText from "./SubComponents/StyledText";
 
 const StyledDiv = styled.div`
-  padding: 1em;
-  background-color: #ffffff;
-  height: 100vh;
+  display: flex;
+  flex-direction: columns;
+  padding-bottom: 1em;
 `;
 
+const Spacer = styled.div`
+  margin-top: 2em;
+  margin-bottom: 1em;
+`;
+
+const education = data.Education;
 export default function Education() {
   return (
+    <>
+    <Spacer>
+      <StyledText h1 b>EDUCATION:</StyledText>
+    </Spacer>
     <StyledDiv>
-        <h2>Education:</h2>
-        <p>Im getting there according to my University, according to myself though, i still feel like i know nothing... Dont we all though? No? Just me?  zzzzzzzzz zzzzzz zzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzz
-        </p>
-        <hr />
+      {education.map(data => (
+        <EducationCard
+          title={data.Title}
+          school={data.School}
+          description={data.Description}
+        />
+      ))}
     </StyledDiv>
+    </>
   );
 }

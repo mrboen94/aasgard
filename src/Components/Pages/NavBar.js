@@ -7,7 +7,7 @@ const StyledDiv = styled.div`
   background-color: #e2e2e2;
   height: 100vh;
   min-height: 1200px;
-  width 14em;
+  width 15em;
   margin-left: 0;
 `;
 

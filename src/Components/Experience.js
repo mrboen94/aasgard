@@ -1,17 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { ExperienceCard } from "./SubComponents";
+import { StyledText } from "./SubComponents"
 
 const StyledDiv = styled.div`
-  padding: 1em;
   background-color: #ffffff;
-  height: 100vh;
 `;
 
 export default function Experience() {
   return (
     <StyledDiv>
-      <h2>Experience:</h2>
+      <StyledText h1 b>Experience:</StyledText>
       <ExperienceCard />
     </StyledDiv>
   );
