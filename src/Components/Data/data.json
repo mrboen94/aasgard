@@ -17,5 +17,38 @@
         "Company": "STRYVO, STRYN",
         "Description": "Provided documentation for oil and gas from Stryvo.",
         "Year": "2017"
-    }]
+    }],
+    "Education": [
+        {
+            "Title": "BACHELOR STUDENT: COMPUTER SECURITY",
+            "School": "UNIVERSITY OF BERGEN",
+            "Description": "Finishing my degree in june 2020, considering a master."
+        },
+        {
+            "Title": "FOLKHIGHSCHOOL: PARKOUR & PROJECTS",
+            "School": "GYMNASTIKHØJSKOLEN",
+            "Description": "School in Denmark with a primary focus of movement, physical activity and projects."
+        }],
+    "AboutMe": [
+        {   
+            "Title": "COMMUNICATION",
+            "Percent": "75%"
+        },
+        {
+            "Title": "CREATIVITY",
+            "Percent": "80%"
+        },
+        {
+            "Title": "TEAMWORK",
+            "Percent": "75%"
+        },
+        {
+            "Title": "LEADERSHIP",
+            "Percent": "90%"
+        },
+        {
+            "Title": "ORGANIZATIONAL WORK",
+            "Percent": "65%"
+        }
+    ]
 }

@@ -1,22 +1,26 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledP = styled.p`
-    text-align: center;
-    color: #fff;
+  text-align: center;
+  color: #fff;
 `;
 
 const StyledGrid = styled.div`
-  display: grid;
-  grid-template-columns: 90px auto 10px;
+  display: flex;
+  flex: 4 10 2;
   margin: 1em;
   justify-contents: left;
   height: 0px;
   padding-bottom: 26px;
 `;
 
+const StyledTextGrid = styled.div`
+  width: 28%;
+`;
+
 const Tracker = styled.div`
-    width 50%;
+    width 60%;
     height 20px;
     margin: 15px auto;
     background: repeating-linear-gradient(
@@ -41,13 +45,19 @@ const ProgressInTracker = styled.div`
 `;
 
 export default function ProgressBar({ percentage, skill }) {
-        return (
-            <StyledGrid>
-                <p><b>{skill}</b></p>
-                <Tracker>
-                    <ProgressInTracker percentage={percentage} />
-                </Tracker>
-                <p><b>{percentage}</b></p>
-            </StyledGrid>
-        )
-    }
+  return (
+    <StyledGrid>
+      <StyledTextGrid>
+        <p>
+          <b>{skill}</b>
+        </p>
+      </StyledTextGrid>
+      <Tracker>
+        <ProgressInTracker percentage={percentage} />
+      </Tracker>
+      <p>
+        <b>{percentage}</b>
+      </p>
+    </StyledGrid>
+  );
+}

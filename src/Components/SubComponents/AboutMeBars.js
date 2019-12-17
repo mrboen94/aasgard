@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProgressBar from "./ProgressBar";
+import data from "../Data/data.json";
 
 const StyledProgressBar = styled.div`
   width: 100%
@@ -8,14 +9,16 @@ const StyledProgressBar = styled.div`
   margin: 0 auto;
 `;
 
+const aboutMe = data.AboutMe;
+
 export default function AboutMeBars() {
   return (
-    <StyledProgressBar> 
-        <ProgressBar percentage={"75%"} skill={"COMMUNICATION"} />
-        <ProgressBar percentage={"80%"} skill={"CREATIVITY"} />
-        <ProgressBar percentage={"75%"} skill={"TEAMWORK"} />
-        <ProgressBar percentage={"90%"} skill={"LEADERSHIP"} />
-        <ProgressBar percentage={"60%"} skill={"ORGANIZATIONAL WORK"} />
-    </StyledProgressBar>
+    <>
+      {aboutMe.map(data => (
+        <StyledProgressBar>
+          <ProgressBar percentage={data.Percent} skill={data.Title} />
+        </StyledProgressBar>
+      ))}
+    </>
   );
 }
