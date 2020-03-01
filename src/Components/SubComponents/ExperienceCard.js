@@ -8,6 +8,8 @@ const StyledDiv = styled.div`
   flex: 10 5;
   flex-wrap: wrap;
   width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 2px solid;
 `;
 
 const StyledCols = styled.div`
@@ -57,7 +59,10 @@ const Line = styled.div`
   margin-left: 3px;
   position: absolute;
   width: 4px;
-  height: 100px;
+  height: ${props => {
+    if (props.last) return "50px";
+    return "100px";
+  }};
   margin-top: 1px;
   background-color: #2e2e2e;
 `;
@@ -78,7 +83,7 @@ const experience = data.Experience;
 export default function ExperienceCard() {
   return (
     <StyledDiv>
-      {experience.map(data => (
+      {experience.map((data, i) => (
         <StyledCols>
           <ArrowDiv>
             <StyledYear>{data.Year}</StyledYear>
@@ -86,11 +91,15 @@ export default function ExperienceCard() {
           </ArrowDiv>
           <StyledBorderDiv>
             <Circle />
-            <Line />
+            {experience.length - 1 === i ? <Line last /> : <Line />}
           </StyledBorderDiv>
           <StyledTextDiv>
-            <StyledText h2 b>{data.Title}</StyledText>
-            <StyledText h3 b>{data.Company}</StyledText>
+            <StyledText h2 b>
+              {data.Title}
+            </StyledText>
+            <StyledText h3 b>
+              {data.Company}
+            </StyledText>
             <StyledText p>{data.Description}</StyledText>
           </StyledTextDiv>
         </StyledCols>
