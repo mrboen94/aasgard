@@ -34,7 +34,7 @@ export default function Socials() {
   return (
     <StyledDiv>
       <h3>Socials:</h3>
-      <StyledLink href="www.linkedin.com/in/mathias-b%C3%B8e-613a5610b/">
+      <StyledLink href="www.linkedin.com/in/boemathias">
         <StyledImg alt="LinkedIn Logo" src={LinkedIn} />
         <p>LinkedIn</p>
       </StyledLink>
