@@ -19,18 +19,21 @@ const education = data.Education;
 export default function Education() {
   return (
     <>
-    <Spacer>
-      <StyledText h1 b>EDUCATION:</StyledText>
-    </Spacer>
-    <StyledDiv>
-      {education.map(data => (
-        <EducationCard
-          title={data.Title}
-          school={data.School}
-          description={data.Description}
-        />
-      ))}
-    </StyledDiv>
+      <Spacer>
+        <StyledText h1 b>
+          EDUCATION:
+        </StyledText>
+      </Spacer>
+      <StyledDiv>
+        {education.map(data => (
+          <EducationCard
+            key={data.id}
+            title={data.Title}
+            school={data.School}
+            description={data.Description}
+          />
+        ))}
+      </StyledDiv>
     </>
   );
 }

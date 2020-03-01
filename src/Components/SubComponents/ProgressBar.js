@@ -13,6 +13,7 @@ const StyledGrid = styled.div`
 
 const StyledTextGrid = styled.div`
   width: 24%;
+  margin-right: 1em;
 `;
 
 const Tracker = styled.div`
@@ -32,6 +33,7 @@ const Tracker = styled.div`
 const ProgressInTracker = styled.div`
     height: 100%;
     width: 100%
+    transform: 0s;
     background: linear-gradient(
         90deg,
         #2e2e2e ${props => props.percentage},
@@ -40,7 +42,7 @@ const ProgressInTracker = styled.div`
     border-radius: 10px 0 0 10px;
 `;
 
-export default function ProgressBar({ percentage, skill, visual}) {
+export default function ProgressBar({ percentage, skill, visual }) {
   return (
     <StyledGrid>
       <StyledTextGrid>
@@ -51,11 +53,11 @@ export default function ProgressBar({ percentage, skill, visual}) {
       <Tracker>
         <ProgressInTracker percentage={percentage} />
       </Tracker>
-      {visual &&
-      <StyledText p b>
-        {percentage}
-      </StyledText>
-      }
+      {visual && (
+        <StyledText p b>
+          {percentage}
+        </StyledText>
+      )}
     </StyledGrid>
   );
 }

@@ -15,10 +15,16 @@ const knowledge = data.Knowledge;
 export default function Knowledge() {
   return (
     <>
-      <StyledText h1 b>Knowledge:</StyledText>
+      <StyledText h1 b>
+        Knowledge:
+      </StyledText>
       <StyledDiv>
         {knowledge.map(data => (
-        <KnowledgeCard skill={data.Title} percentage={data.Percent} /> 
+          <KnowledgeCard
+            skill={data.Title}
+            percentage={data.Percent}
+            key={data.id}
+          />
         ))}
       </StyledDiv>
     </>

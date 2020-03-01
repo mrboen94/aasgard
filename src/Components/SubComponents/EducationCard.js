@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
   flex: 1 1 auto;
   border-bottom: 2px solid;
   padding-bottom: 2em;
-  max-width: 50%
+  max-width: 50%;
 `;
 
 const Border = styled.div`
@@ -20,9 +20,13 @@ const Border = styled.div`
 export default function EducationCard({ title, school, description }) {
   return (
     <StyledDiv>
-      <StyledText h2 b>{title}</StyledText>
+      <StyledText h2 b>
+        {title}
+      </StyledText>
       <Border />
-      <StyledText h3 b>{school}</StyledText>
+      <StyledText h3 b>
+        {school}
+      </StyledText>
       <StyledText p>{description}</StyledText>
     </StyledDiv>
   );
