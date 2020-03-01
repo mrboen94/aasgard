@@ -60,7 +60,7 @@ const Line = styled.div`
   position: absolute;
   width: 4px;
   height: ${props => {
-    if (props.last) return "50px";
+    if (props.last) return "65px";
     return "100px";
   }};
   margin-top: 1px;
@@ -84,7 +84,7 @@ export default function ExperienceCard() {
   return (
     <StyledDiv>
       {experience.map((data, i) => (
-        <StyledCols>
+        <StyledCols key={data.id}>
           <ArrowDiv>
             <StyledYear>{data.Year}</StyledYear>
             <StyledYearArrow />

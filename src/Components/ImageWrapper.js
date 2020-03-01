@@ -12,6 +12,11 @@ const StyledImage = styled.div`
   display: block;
   margin: 0 auto;
   filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(0%);
+    -webkit-transition: -webkit-filter 2s linear;
+  }
+  -webkit-transition : -webkit-filter 2s linear
   border: solid 4px;
 `;
 
