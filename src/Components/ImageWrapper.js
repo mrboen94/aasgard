@@ -12,12 +12,13 @@ const StyledImage = styled.div`
   display: block;
   margin: 0 auto;
   filter: grayscale(100%);
+  border: solid 4px;
   &:hover {
     filter: grayscale(0%);
     -webkit-transition: -webkit-filter 2s linear;
+    border: solid 4px;
   }
-  -webkit-transition : -webkit-filter 2s linear
-  border: solid 4px;
+  -webkit-transition: -webkit-filter 2s linear;
 `;
 
 const StyledSpinner = styled.div``;

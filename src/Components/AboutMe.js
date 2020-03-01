@@ -11,15 +11,17 @@ const StyledDiv = styled.div`
 export default function AboutMe() {
   return (
     <StyledDiv>
-        <StyledText h1 b>
-          Mathias Bøe
-        </StyledText>
-        <StyledText h2 b>About Me:</StyledText>
-        <StyledText p>Im a ya boi, a nerd lorem hipsum schmipzum zzzzzzzzzzz zzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzz zzzzzzzz z zzzzzzzz zzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzz zzzzzz zzzzzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-          zzzzzzzzzzzzzzzzzzzzzzzzz
-        </StyledText>
-          <AboutMeBars />
+      <StyledText h1 b>
+        Mathias Bøe
+      </StyledText>
+      <StyledText h2 b>
+        About Me:
+      </StyledText>
+      <StyledText p>
+        Hello it's me, welcome to my palace, take a look around and get a feel
+        of the place. Find the secret easter eggs, happy hunting!
+      </StyledText>
+      <AboutMeBars />
     </StyledDiv>
   );
 }
