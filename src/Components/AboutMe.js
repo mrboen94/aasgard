@@ -14,9 +14,6 @@ export default function AboutMe() {
       <StyledText h1 b>
         Mathias Bøe
       </StyledText>
-      <StyledText h2 b>
-        About Me:
-      </StyledText>
       <StyledText p>
         Hello it's me, welcome to my palace, take a look around and get a feel
         of the place. Find the secret easter eggs, happy hunting!
