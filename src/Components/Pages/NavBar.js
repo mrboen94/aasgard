@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Info, ImageWrapper, Interests, Contact, Socials } from "../";
+import { Header } from "../Pages";
 
 const StyledDiv = styled.div`
-  padding: 1em;
+  padding: 12px;
   background-color: #e2e2e2;
   height: 100%;
   min-height: 1200px;
@@ -28,8 +29,8 @@ export default function NavBar() {
     <div>
       <StyledDiv>
         <ImageWrapper />
+        <Header />
         <FlexDiv>
-          <h1>Contact:</h1>
           <Contact />
           <Info />
           <Interests />
