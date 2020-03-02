@@ -11,6 +11,9 @@ export default function Info() {
     <StyledDiv>
       <h3>About me:</h3>
       <p>
+        <b>Name:</b> Mathias Bøe
+      </p>
+      <p>
         <b>Born:</b> 14.09.1994
       </p>
       <p>

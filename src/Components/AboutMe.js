@@ -12,11 +12,11 @@ export default function AboutMe() {
   return (
     <StyledDiv>
       <StyledText h1 b>
-        Mathias Bøe
+        About me:
       </StyledText>
       <StyledText p>
-        Hello it's me, welcome to my palace, take a look around and get a feel
-        of the place. Find the secret easter eggs, happy hunting!
+        Hello it's me, Mathias Bøe, welcome to my website, take a look around
+        and get a feel of the place. Find the secret easter eggs, happy hunting!
       </StyledText>
       <AboutMeBars />
     </StyledDiv>

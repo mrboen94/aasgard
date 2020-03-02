@@ -21,7 +21,7 @@ export default function Education() {
     <>
       <Spacer>
         <StyledText h1 b>
-          EDUCATION:
+          Education:
         </StyledText>
       </Spacer>
       <StyledDiv>
