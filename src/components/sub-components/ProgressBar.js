@@ -39,7 +39,7 @@ const ProgressInTracker = styled.div`
         #2e2e2e ${props => props.percentage},
         transparent ${props => props.percentage}
     );
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
 `;
 
 export default function ProgressBar({ percentage, skill, visual }) {

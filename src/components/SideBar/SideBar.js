@@ -13,12 +13,6 @@ const StyledDiv = styled.div`
   margin-left: 0;
 `;
 
-const BackgroundDiv = styled.div`
-  background-color: #e2e2e2;
-  position: fixed;
-  height: 100%;
-`;
-
 const FlexDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -64,7 +58,6 @@ export default function SideBar() {
           <Socials />
         </FlexDiv>
       </StyledDiv>
-      <BackgroundDiv />
     </div>
   );
 }
