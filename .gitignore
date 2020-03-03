@@ -11,7 +11,13 @@
 # production
 /build
 
+# while app is running ignore the public folder
+/public
+
 # misc
+.env*
+.env
+.env.*
 .DS_Store
 .env.local
 .env.development.local
