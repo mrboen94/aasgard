@@ -36,11 +36,6 @@ const Navigation = styled.div`
   align-items: center;
 `;
 
-const ImageWrapperWrapper = styled.div`
-  max-width: 200px;
-  max-height: 200px;
-`;
-
 export default function SideBar() {
   return (
     <div>
