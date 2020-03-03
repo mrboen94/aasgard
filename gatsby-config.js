@@ -12,14 +12,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
+        path: `src/images`
       }
     },
     {
       resolve: `gatsby-plugin-netlify-functions`,
       options: {
-        functionsSrc: `${__dirname}/src/functions`,
-        functionsOutput: `${__dirname}/functions`
+        functionsSrc: `src/functions`,
+        functionsOutput: `/functions`
       }
     },
     {
