@@ -3,9 +3,15 @@ import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const StyledImage = styled(Img)`
-  heiht: 200px;
+const Wrapper = styled.div`
+  height: 200px;
   width: 200px;
+  background-position: center;
+  display: block;
+  margin: 0 auto;
+`;
+
+const StyledImage = styled(Img)`
   filter: grayscale(100%);
   border: solid 4px;
   &:hover {
@@ -15,17 +21,14 @@ const StyledImage = styled(Img)`
   }
   -webkit-transition: -webkit-filter 2s linear;
   background-image: url(${props => props.image});
-  background-position: center;
-  background-size: cover;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+  background-size: cover;
 `;
 
 const ImageWrapper = () => {
   const data = useStaticQuery(graphql`
     query {
-      profilePicture: file(relativePath: { eq: "me-300x300.jpg" }) {
+      profilePicture: file(relativePath: { eq: "me.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid
@@ -35,7 +38,11 @@ const ImageWrapper = () => {
     }
   `);
 
-  return <StyledImage fluid={data.profilePicture.childImageSharp.fluid} />;
+  return (
+    <Wrapper>
+      <StyledImage fluid={data.profilePicture.childImageSharp.fluid} />
+    </Wrapper>
+  );
 };
 
 export default ImageWrapper;

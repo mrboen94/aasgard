@@ -40,9 +40,7 @@ export default function SideBar() {
   return (
     <div>
       <StyledDiv>
-        <ImageWrapperWrapper>
-          <ImageWrapper />
-        </ImageWrapperWrapper>
+        <ImageWrapper />
         <Navigation>
           <Link to="/">
             <StyledText p center b>
