@@ -28,6 +28,7 @@ const ImageWrapper = () => {
         childImageSharp {
           fluid(quality: 100, maxWidth: 300, maxHeight: 300) {
             ...GatsbyImageSharpFluid
+            presentationWidth
           }
         }
       }
