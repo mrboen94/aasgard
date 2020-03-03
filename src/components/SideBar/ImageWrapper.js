@@ -10,6 +10,8 @@ const Wrapper = styled.div`
 `;
 
 const StyledImage = styled(Img)`
+  height: 200px;
+  width: 200px;
   filter: grayscale(100%);
   border: solid 4px;
   &:hover {
@@ -26,9 +28,8 @@ const ImageWrapper = () => {
     query {
       profilePicture: file(relativePath: { eq: "me-300x300.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 300, maxHeight: 300) {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
-            presentationWidth
           }
         }
       }
@@ -39,8 +40,7 @@ const ImageWrapper = () => {
     <Wrapper>
       <StyledImage
         fluid={data.profilePicture.childImageSharp.fluid}
-        style={{ maxHeight: "100%" }}
-        imgStyle={{ objectFit: "contain" }}
+        style={{ objectFit: "contain" }}
       />
     </Wrapper>
   );
