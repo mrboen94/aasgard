@@ -32,8 +32,8 @@ const Navigation = styled.div`
   flex-direction: row;
   padding: 12px;
   width: 100%
-  border: 2px solid;
   align-items: center;
+  margin: 0 auto;
 `;
 
 export default function SideBar() {

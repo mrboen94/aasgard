@@ -6,8 +6,6 @@ import Img from "gatsby-image";
 const Wrapper = styled.div`
   height: 200px;
   width: 200px;
-  background-position: center;
-  display: block;
   margin: 0 auto;
 `;
 
@@ -21,7 +19,6 @@ const StyledImage = styled(Img)`
   }
   -webkit-transition: -webkit-filter 2s linear;
   border-radius: 50%;
-  background-size: cover;
 `;
 
 const ImageWrapper = () => {
