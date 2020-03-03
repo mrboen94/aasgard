@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import ProfilePicture from "../../images/me-300x300.jpg";
 
 const Wrapper = styled.div`
   height: 200px;
   width: 200px;
   margin: 0 auto;
+  padding-bottom: 12px;
 `;
 
-const StyledImage = styled(Img)`
+const StyledImage = styled.img`
   height: 200px;
   width: 200px;
   filter: grayscale(100%);
@@ -24,25 +24,9 @@ const StyledImage = styled(Img)`
 `;
 
 const ImageWrapper = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      profilePicture: file(relativePath: { eq: "me-300x300.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <Wrapper>
-      <StyledImage
-        fluid={data.profilePicture.childImageSharp.fluid}
-        imgStyle={{ objectFit: "contain" }}
-        style={{ margin: "0 auto", maxHeight: "200px" }}
-      />
+      <StyledImage src={ProfilePicture} />
     </Wrapper>
   );
 };

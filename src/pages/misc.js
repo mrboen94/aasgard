@@ -1,10 +1,11 @@
-import React from "react"
-import styled from "styled-components"
-import { SideBar } from "../components/SideBar"
+import React from "react";
+import styled from "styled-components";
+import { SideBar } from "../components/SideBar";
+import { FadeIn } from "../components";
 
 const PageWrapper = styled.div`
   display: flex;
-`
+`;
 
 const StyledDiv = styled.div`
   padding: 1em;
@@ -14,15 +15,15 @@ const StyledDiv = styled.div`
   flex-direction: column;
   max-width: 700px;
   min-width: 700px;
-`
+`;
 const Misc = () => (
   <PageWrapper>
     <SideBar />
-    <StyledDiv>
+    <FadeIn>
       <h1>Top tier content</h1>
       <p>Welcome to page 3</p>
-    </StyledDiv>
+    </FadeIn>
   </PageWrapper>
-)
+);
 
-export default Misc
+export default Misc;
