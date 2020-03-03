@@ -5,8 +5,11 @@ import data from "./Data/data";
 import StyledText from "./StyledText";
 
 const Wrapper = styled.div`
-  min-height: 220px;
+  min-height: 180px;
   padding-bottom: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid;
 `;
 
 const StyledDiv = styled.div`
@@ -16,7 +19,6 @@ const StyledDiv = styled.div`
 `;
 
 const Spacer = styled.div`
-  margin-top: 12px;
   margin-bottom: 12px;
 `;
 

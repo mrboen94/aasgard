@@ -5,6 +5,7 @@ import { StyledText } from "./";
 import data from "./Data/data.json";
 
 const Wrapper = styled.div`
+  margin-top: 12px;
   min-height: 220px;
 `;
 
