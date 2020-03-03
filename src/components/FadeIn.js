@@ -14,7 +14,7 @@ const StyledDiv = styled.div`
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
+  animation: fadein 0.5s;
 
   @keyframes fadein {
     from {

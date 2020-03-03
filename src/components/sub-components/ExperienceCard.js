@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import data from "../Data/data.json"
-import StyledText from "../StyledText"
+import React from "react";
+import styled from "styled-components";
+import data from "../Data/data.json";
+import StyledText from "../StyledText";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -10,14 +10,14 @@ const StyledDiv = styled.div`
   width: 100%;
   padding-bottom: 12px;
   border-bottom: 2px solid;
-`
+`;
 
 const StyledCols = styled.div`
   padding: 0px;
   display: flex;
   justify-content: left;
   width: 100%;
-`
+`;
 
 const ArrowDiv = styled.div`
   padding-top: 20px;
@@ -25,7 +25,7 @@ const ArrowDiv = styled.div`
   height: 20px;
   height: 20px;
   width: 110px;
-`
+`;
 
 const StyledYear = styled.div`
   background: #2e2e2e;
@@ -34,38 +34,38 @@ const StyledYear = styled.div`
   color: #fff;
   font-weight: bold;
   padding-left 12px;
-`
+`;
 
 const StyledYearArrow = styled.div`
   background: transparent;
   border-left: 12px solid #2e2e2e;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
-`
+`;
 
 const StyledBorderDiv = styled.div`
-  margin-top: 23px;
+  margin-top: 25px;
   justify-content: left;
   padding-left: 3em;
   padding-right: 3em;
-`
+`;
 
 const StyledTextDiv = styled.div`
   margin-top: 13px;
   padding-bottom: 1em;
-`
+`;
 
 const Line = styled.div`
   margin-left: 3px;
   position: absolute;
   width: 4px;
   height: ${props => {
-    if (props.last) return "65px"
-    return "150px"
+    if (props.last) return "65px";
+    return "150px";
   }};
   margin-top: 1px;
   background-color: #2e2e2e;
-`
+`;
 
 const Circle = styled.div`
   position: absolute;
@@ -76,9 +76,9 @@ const Circle = styled.div`
   height: 10px;
   border: 2px solid white;
   border-radius: 50%;
-`
+`;
 
-const experience = data.Experience
+const experience = data.Experience;
 
 export default function ExperienceCard() {
   return (
@@ -105,5 +105,5 @@ export default function ExperienceCard() {
         </StyledCols>
       ))}
     </StyledDiv>
-  )
+  );
 }
