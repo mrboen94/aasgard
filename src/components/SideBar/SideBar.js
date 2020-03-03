@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
-import { Info, ImageWrapper, Interests, Contact, Socials } from "./"
-import { StyledText } from "../"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import { Info, ImageWrapper, Interests, Contact, Socials } from "./";
+import { StyledText } from "../";
 
 const StyledDiv = styled.div`
   padding: 12px;
@@ -11,19 +11,19 @@ const StyledDiv = styled.div`
   min-height: 1200px;
   width 15em;
   margin-left: 0;
-`
+`;
 
 const BackgroundDiv = styled.div`
   background-color: #e2e2e2;
   position: fixed;
   height: 100%;
-`
+`;
 
 const FlexDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: left;
-`
+`;
 
 const Navigation = styled.div`
   display: flex;
@@ -34,13 +34,15 @@ const Navigation = styled.div`
   width: 100%
   border: 2px solid;
   align-items: center;
-`
+`;
 
 export default function SideBar() {
   return (
     <div>
       <StyledDiv>
-        <ImageWrapper />
+        <div>
+          <ImageWrapper />
+        </div>
         <Navigation>
           <Link to="/">
             <StyledText p center b>
@@ -67,5 +69,5 @@ export default function SideBar() {
       </StyledDiv>
       <BackgroundDiv />
     </div>
-  )
+  );
 }
