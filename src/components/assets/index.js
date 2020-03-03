@@ -1,5 +1,4 @@
-export { default as ProfilePicture } from "./images/me.jpg"
-export { default as Facebook } from "./icons/facebookIcon.png"
-export { default as Instagram } from "./icons/instagramIcon.png"
-export { default as LinkedIn } from "./icons/linkedInIcon.png"
-export { default as Github } from "./icons/githubIcon.png"
+export { default as Facebook } from "./icons/facebookIcon.png";
+export { default as Instagram } from "./icons/instagramIcon.png";
+export { default as LinkedIn } from "./icons/linkedInIcon.png";
+export { default as Github } from "./icons/githubIcon.png";

@@ -1,9 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import { ProfilePicture } from "../assets"
+import React from "react";
+import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-const StyledImage = styled.div`
-  background-image: url(${ProfilePicture});
+const StyledImage = styled(Img)`
+  background-image: url(${props => props.image});
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -19,15 +20,22 @@ const StyledImage = styled.div`
     border: solid 4px;
   }
   -webkit-transition: -webkit-filter 2s linear;
-`
+`;
 
-const StyledSpinner = styled.div``
+const ImageWrapper = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      profilePicture: file(relativePath: { eq: "me.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
 
-export default function ImageWrapper() {
-  return (
-    <>
-      <StyledImage />
-      <StyledSpinner />
-    </>
-  )
-}
+  return <StyledImage fluid={data.profilePicture.childImageSharp.fluid} />;
+};
+
+export default ImageWrapper;
