@@ -37,7 +37,11 @@ const ImageWrapper = () => {
 
   return (
     <Wrapper>
-      <StyledImage fluid={data.profilePicture.childImageSharp.fluid} />
+      <StyledImage
+        fluid={data.profilePicture.childImageSharp.fluid}
+        style={{ maxHeight: "100%" }}
+        imgStyle={{ objectFit: "contain" }}
+      />
     </Wrapper>
   );
 };
