@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Mathias Bøe <mrboen94@gmail.com>",
   "dependencies": {
+    "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "dotenv": "^8.2.0",
     "gatsby": "^2.19.7",
