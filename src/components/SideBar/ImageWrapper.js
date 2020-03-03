@@ -40,7 +40,8 @@ const ImageWrapper = () => {
     <Wrapper>
       <StyledImage
         fluid={data.profilePicture.childImageSharp.fluid}
-        style={{ objectFit: "contain" }}
+        imgStyle={{ objectFit: "contain" }}
+        style={{ margin: "0 auto", maxHeight: "200px" }}
       />
     </Wrapper>
   );
