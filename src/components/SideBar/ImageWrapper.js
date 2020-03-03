@@ -27,7 +27,7 @@ const ImageWrapper = () => {
     query {
       profilePicture: file(relativePath: { eq: "me.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
