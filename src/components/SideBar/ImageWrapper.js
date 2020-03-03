@@ -4,8 +4,10 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 const StyledImage = styled(Img)`
+  max-width: 200px;
+  max-height: 200px;
+  heiht: 200px;
   width: 200px;
-  height: 200px;
   filter: grayscale(100%);
   border: solid 4px;
   &:hover {
