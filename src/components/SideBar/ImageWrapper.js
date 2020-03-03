@@ -20,7 +20,6 @@ const StyledImage = styled(Img)`
     border: solid 4px;
   }
   -webkit-transition: -webkit-filter 2s linear;
-  background-image: url(${props => props.image});
   border-radius: 50%;
   background-size: cover;
 `;
