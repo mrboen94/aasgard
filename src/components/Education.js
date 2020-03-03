@@ -1,24 +1,31 @@
-import React from "react"
-import styled from "styled-components"
-import { EducationCard } from "./sub-components"
-import data from "./Data/data"
-import StyledText from "./StyledText"
+import React from "react";
+import styled from "styled-components";
+import { EducationCard } from "./sub-components";
+import data from "./Data/data";
+import StyledText from "./StyledText";
+
+const Wrapper = styled.div`
+  min-height: 180px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid;
+`;
 
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: columns;
-  padding-bottom: 1em;
-`
+  padding-bottom: 12px;
+`;
 
 const Spacer = styled.div`
-  margin-top: 2em;
-  margin-bottom: 1em;
-`
+  margin-bottom: 12px;
+`;
 
-const education = data.Education
+const education = data.Education;
 export default function Education() {
   return (
-    <>
+    <Wrapper>
       <Spacer>
         <StyledText h1 b>
           Education:
@@ -34,6 +41,6 @@ export default function Education() {
           />
         ))}
       </StyledDiv>
-    </>
-  )
+    </Wrapper>
+  );
 }

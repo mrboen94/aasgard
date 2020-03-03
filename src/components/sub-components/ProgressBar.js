@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import StyledText from "../StyledText"
+import React from "react";
+import styled from "styled-components";
+import StyledText from "../StyledText";
 
 const StyledGrid = styled.div`
   display: flex;
@@ -9,12 +9,12 @@ const StyledGrid = styled.div`
   justify-contents: left;
   height: 0px;
   padding-bottom: 26px;
-`
+`;
 
 const StyledTextGrid = styled.div`
   width: 24%;
   margin-right: 1em;
-`
+`;
 
 const Tracker = styled.div`
     width 60%;
@@ -24,11 +24,11 @@ const Tracker = styled.div`
         30deg,
         #fff 1px,
         #fff 3px,
-        #2e2e2e 4px,
-        #2e2e2e 6px
+        #e2e2e2 4px,
+        #e2e2e2 6px
     );
     border-radius: 10px;
-`
+`;
 
 const ProgressInTracker = styled.div`
     height: 100%;
@@ -39,8 +39,8 @@ const ProgressInTracker = styled.div`
         #2e2e2e ${props => props.percentage},
         transparent ${props => props.percentage}
     );
-    border-radius: 10px 0 0 10px;
-`
+    border-radius: 10px;
+`;
 
 export default function ProgressBar({ percentage, skill, visual }) {
   return (
@@ -59,5 +59,5 @@ export default function ProgressBar({ percentage, skill, visual }) {
         </StyledText>
       )}
     </StyledGrid>
-  )
+  );
 }

@@ -13,12 +13,6 @@ const StyledDiv = styled.div`
   margin-left: 0;
 `;
 
-const BackgroundDiv = styled.div`
-  background-color: #e2e2e2;
-  position: fixed;
-  height: 100%;
-`;
-
 const FlexDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -37,34 +31,31 @@ const Navigation = styled.div`
 
 export default function SideBar() {
   return (
-    <div>
-      <StyledDiv>
-        <ImageWrapper />
-        <Navigation>
-          <Link to="/">
-            <StyledText p center b>
-              HOME
-            </StyledText>
-          </Link>
-          <Link to="/projects/">
-            <StyledText p center b>
-              PROJECTS
-            </StyledText>
-          </Link>
-          <Link to="/misc/">
-            <StyledText p center b>
-              MISC
-            </StyledText>
-          </Link>
-        </Navigation>
-        <FlexDiv>
-          <Contact />
-          <Info />
-          <Interests />
-          <Socials />
-        </FlexDiv>
-      </StyledDiv>
-      <BackgroundDiv />
-    </div>
+    <StyledDiv>
+      <ImageWrapper />
+      <Navigation>
+        <Link to="/">
+          <StyledText p center b>
+            HOME
+          </StyledText>
+        </Link>
+        <Link to="/projects/">
+          <StyledText p center b>
+            PROJECTS
+          </StyledText>
+        </Link>
+        <Link to="/misc/">
+          <StyledText p center b>
+            MISC
+          </StyledText>
+        </Link>
+      </Navigation>
+      <FlexDiv>
+        <Contact />
+        <Info />
+        <Interests />
+        <Socials />
+      </FlexDiv>
+    </StyledDiv>
   );
 }
