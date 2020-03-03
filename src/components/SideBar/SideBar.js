@@ -31,33 +31,31 @@ const Navigation = styled.div`
 
 export default function SideBar() {
   return (
-    <div>
-      <StyledDiv>
-        <ImageWrapper />
-        <Navigation>
-          <Link to="/">
-            <StyledText p center b>
-              HOME
-            </StyledText>
-          </Link>
-          <Link to="/projects/">
-            <StyledText p center b>
-              PROJECTS
-            </StyledText>
-          </Link>
-          <Link to="/misc/">
-            <StyledText p center b>
-              MISC
-            </StyledText>
-          </Link>
-        </Navigation>
-        <FlexDiv>
-          <Contact />
-          <Info />
-          <Interests />
-          <Socials />
-        </FlexDiv>
-      </StyledDiv>
-    </div>
+    <StyledDiv>
+      <ImageWrapper />
+      <Navigation>
+        <Link to="/">
+          <StyledText p center b>
+            HOME
+          </StyledText>
+        </Link>
+        <Link to="/projects/">
+          <StyledText p center b>
+            PROJECTS
+          </StyledText>
+        </Link>
+        <Link to="/misc/">
+          <StyledText p center b>
+            MISC
+          </StyledText>
+        </Link>
+      </Navigation>
+      <FlexDiv>
+        <Contact />
+        <Info />
+        <Interests />
+        <Socials />
+      </FlexDiv>
+    </StyledDiv>
   );
 }
