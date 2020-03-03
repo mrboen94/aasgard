@@ -25,15 +25,14 @@ const FlexDiv = styled.div`
   justify-content: left;
 `;
 
+// Fix the css to properly align the text in the middle
 const Navigation = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
   padding: 12px;
-  width: 100%
-  align-items: center;
-  margin: 0 auto;
+  padding-left: 6px;
+  width: 100%;
 `;
 
 export default function SideBar() {
