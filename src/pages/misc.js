@@ -3,7 +3,6 @@ import styled from "styled-components";
 import axios from "axios";
 import { SideBar } from "../components/SideBar";
 import { FadeIn } from "../components";
-import { Link } from "gatsby";
 
 const PageWrapper = styled.div`
   display: flex;

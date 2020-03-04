@@ -13,16 +13,18 @@ const PageWrapper = styled.div`
   display: flex;
 `;
 
-const IndexPage = () => (
-  <PageWrapper>
-    <SideBar />
-    <FadeIn>
-      <AboutMe />
-      <Experience />
-      <Education />
-      <Knowledge />
-    </FadeIn>
-  </PageWrapper>
-);
+const IndexPage = () => {
+  return (
+    <PageWrapper>
+      <SideBar />
+      <FadeIn>
+        <AboutMe />
+        <Experience />
+        <Education />
+        <Knowledge />
+      </FadeIn>
+    </PageWrapper>
+  );
+};
 
 export default IndexPage;

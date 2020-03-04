@@ -13,6 +13,9 @@ This website was built using react and styled components.
 - CSS all the things
 - Add projects to projects page
 - Add misc info to misc page
+- Add themes
+- Make mobile friendly
+- Add download to pdf button
 
 ## Available Scripts
 
