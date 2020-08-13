@@ -2,20 +2,27 @@
     "Experience": [
     {
         "id": 1,
+        "Title": "DEVELOPER", 
+        "Company": "ISLANDGARDEN, BERGEN",
+        "Description": "Currently working with frontend; React/gatsby/styled-components combo.",
+        "Year": "2020"
+    },
+    {
+        "id": 2,
         "Title": "JUNIOR DEVELOPER", 
         "Company": "SBANKEN, BERGEN",
         "Description": "Working mostly with front end and React.js, some backend.",
         "Year": "2019"
     },
     {
-        "id": 2,
+        "id": 3,
         "Title": "SUBSTITUTE PROJECT LEADER",
         "Company": "STRYVO, STRYN",
         "Description": "Project lead for the award winning steel bridge at Sognefjellet.",
         "Year": "2018"
     },
     {
-        "id": 3,
+        "id": 4,
         "Title": "DOCUMENTATION",
         "Company": "STRYVO, STRYN",
         "Description": "Provided documentation for oil and gas from Stryvo.",
@@ -24,12 +31,18 @@
     "Education": [
         {
             "id": 1,
-            "Title": "BACHELOR STUDENT: COMPUTER SECURITY",
+            "Title": "MASTER STUDENT: VISUALIZATION",
             "School": "UNIVERSITY OF BERGEN",
-            "Description": "Finishing my degree in june 2020, considering a master."
+            "Description": "Finishing my degree in june 2022."
         },
         {
             "id": 2,
+            "Title": "BACHELOR STUDENT: COMPUTER SECURITY",
+            "School": "UNIVERSITY OF BERGEN",
+            "Description": "Finished my degree in june 2020."
+        },
+        {
+            "id": 3,
             "Title": "FOLKHIGHSCHOOL: PARKOUR & PROJECTS",
             "School": "GYMNASTIKHØJSKOLEN",
             "Description": "School in Denmark with a primary focus of movement, physical activity and projects."
@@ -70,12 +83,12 @@
         {
             "id": 2,
             "Title": "REACT",
-            "Percent": "75%"
+            "Percent": "80%"
         },
         {
             "id": 3,
             "Title": "PROCESSING",
-            "Percent": "60%"
+            "Percent": "55%"
         },
         {
             "id": 4,
