@@ -5,39 +5,33 @@ import data from "./Data/data";
 import StyledText from "./StyledText";
 
 const Wrapper = styled.div`
-  min-height: 180px;
+  min-height: 150px;
   padding-bottom: 12px;
   padding-top: 12px;
-  padding-bottom: 12px;
   border-bottom: 2px solid;
 `;
 
 const StyledDiv = styled.div`
+  height: 100%;
   display: flex;
   flex-direction: columns;
-  padding-bottom: 12px;
 `;
 
-const Spacer = styled.div`
-  margin-bottom: 12px;
-`;
+const education = data.education;
 
-const education = data.Education;
 export default function Education() {
   return (
     <Wrapper>
-      <Spacer>
-        <StyledText h1 b>
-          Education:
-        </StyledText>
-      </Spacer>
+      <StyledText h1 b>
+        Education:
+      </StyledText>
       <StyledDiv>
-        {education.map(data => (
+        {education.slice(0, 2).map((data) => (
           <EducationCard
             key={data.id}
-            title={data.Title}
-            school={data.School}
-            description={data.Description}
+            title={data.title}
+            school={data.school}
+            description={data.description}
           />
         ))}
       </StyledDiv>

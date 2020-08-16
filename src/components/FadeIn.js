@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-  padding: 1em;
+  height: 100%;
+  padding-left: 1em;
   background-color: #ffffff;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  min-width: 700px;
+  min-width: 600px;
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */

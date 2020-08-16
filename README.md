@@ -5,11 +5,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 NOTE: This project is still very much a work in progress!
 
 ## Welcome to my web hosted CV
+
 This website was built using react and styled components.
 
 ### Future plans
+
 - ~~Add gatsby for faster loading and snappiness~~
-- Prevent sidebar from mounting and unmounting when switching between pages
+- Prevent sidebar from mounting and unmounting when switching between pages (This can be done with a layout component, take a look at gatsby documentation)
 - CSS all the things
 - Add projects to projects page
 - Add misc info to misc page

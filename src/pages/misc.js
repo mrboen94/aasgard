@@ -5,19 +5,20 @@ import { SideBar } from "../components/SideBar";
 import { FadeIn } from "../components";
 
 const PageWrapper = styled.div`
+  height: 100%;
   display: flex;
 `;
 
 export default class Misc extends React.Component {
   state = {
-    topTracks: []
+    topTracks: [],
   };
   componentDidMount() {
     axios
       .get(
         `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=mrboen94&api_key=5aaa8de171107513b0d4302fae8bf454&limit=10&format=json`
       )
-      .then(res => {
+      .then((res) => {
         const topTracks = res.data.toptracks.track;
         this.setState({ topTracks });
       })
@@ -38,9 +39,9 @@ export default class Misc extends React.Component {
         <SideBar />
         <FadeIn>
           <h1>WIP</h1>
-          <h1>Top tier content</h1>
+          <p>note again that this page is very much under construction.</p>
           <h2>Top tracks</h2>
-          {this.state.topTracks.map(tracks => (
+          {this.state.topTracks.map((tracks) => (
             <FadeIn>
               <a href={tracks.url}>
                 <p>{tracks.name}</p>

@@ -4,16 +4,25 @@ import { Link } from "gatsby";
 import { Info, ImageWrapper, Interests, Contact, Socials } from "./";
 import { StyledText } from "../";
 
-const StyledDiv = styled.div`
-  padding: 12px;
+const BackgroundDiv = styled.div`
+  position: fixed;
+  left: 0px;
+  height: 100vh;
+  width: 250px;
   background-color: #e2e2e2;
-  height: 100%;
-  min-height: 1200px;
-  width 15em;
+  z-index: -1;
+`;
+
+// fix hacked background div solution, it overlaps does not work on mobile..
+const StyledDiv = styled.div`
+  padding-top: 12px;
+  background-color: #e2e2e2;
+  width 250px;
   margin-left: 0;
 `;
 
 const FlexDiv = styled.div`
+  padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -32,6 +41,7 @@ const Navigation = styled.div`
 export default function SideBar() {
   return (
     <StyledDiv>
+      {/* <BackgroundDiv /> */}
       <ImageWrapper />
       <Navigation>
         <Link to="/">

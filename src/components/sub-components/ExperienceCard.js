@@ -59,7 +59,7 @@ const Line = styled.div`
   margin-left: 3px;
   position: absolute;
   width: 4px;
-  height: ${props => {
+  height: ${(props) => {
     if (props.last) return "65px";
     return "150px";
   }};
@@ -78,7 +78,7 @@ const Circle = styled.div`
   border-radius: 50%;
 `;
 
-const experience = data.Experience;
+const experience = data.experience;
 
 export default function ExperienceCard() {
   return (
@@ -86,7 +86,7 @@ export default function ExperienceCard() {
       {experience.map((data, i) => (
         <StyledCols key={data.id}>
           <ArrowDiv>
-            <StyledYear>{data.Year}</StyledYear>
+            <StyledYear>{data.year}</StyledYear>
             <StyledYearArrow />
           </ArrowDiv>
           <StyledBorderDiv>
@@ -95,12 +95,12 @@ export default function ExperienceCard() {
           </StyledBorderDiv>
           <StyledTextDiv>
             <StyledText h2 b>
-              {data.Title}
+              {data.title}
             </StyledText>
             <StyledText h3 b>
-              {data.Company}
+              {data.company}
             </StyledText>
-            <StyledText p>{data.Description}</StyledText>
+            <StyledText p>{data.description}</StyledText>
           </StyledTextDiv>
         </StyledCols>
       ))}

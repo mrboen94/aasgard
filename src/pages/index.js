@@ -6,7 +6,7 @@ import {
   Experience,
   Education,
   Knowledge,
-  FadeIn
+  FadeIn,
 } from "../components";
 
 const PageWrapper = styled.div`
