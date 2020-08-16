@@ -5,15 +5,14 @@ import { Info, ImageWrapper, Interests, Contact, Socials } from "./";
 import { StyledText } from "../";
 
 const StyledDiv = styled.div`
-  padding: 12px;
+  padding-top: 12px;
   background-color: #e2e2e2;
-  height: 100%;
-  min-height: 1200px;
-  width 15em;
+  width 250px;
   margin-left: 0;
 `;
 
 const FlexDiv = styled.div`
+  padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: left;

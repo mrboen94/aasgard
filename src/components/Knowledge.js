@@ -15,7 +15,7 @@ const StyledDiv = styled.div`
   flex-wrap: wrap;
 `;
 
-const knowledge = data.Knowledge;
+const knowledge = data.knowledge;
 
 export default function Knowledge() {
   return (
@@ -24,10 +24,10 @@ export default function Knowledge() {
         Knowledge:
       </StyledText>
       <StyledDiv>
-        {knowledge.map(data => (
+        {knowledge.map((data) => (
           <KnowledgeCard
-            skill={data.Title}
-            percentage={data.Percent}
+            skill={data.title}
+            percentage={data.percent}
             key={data.id}
           />
         ))}

@@ -9,14 +9,14 @@ const StyledProgressBar = styled.div`
   margin: 0 auto;
 `;
 
-const aboutMe = data.AboutMe;
+const aboutMe = data.aboutme;
 
 export default function AboutMeBars() {
   return (
     <>
-      {aboutMe.map(data => (
+      {aboutMe.map((data) => (
         <StyledProgressBar key={data.id}>
-          <ProgressBar percentage={data.Percent} skill={data.Title} visual />
+          <ProgressBar percentage={data.percent} skill={data.title} visual />
         </StyledProgressBar>
       ))}
     </>
