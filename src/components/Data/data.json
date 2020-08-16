@@ -106,6 +106,18 @@
         }],
     "projects": [
         {
+            "id": 6,
+            "title": "Photographs",
+            "description": "Pictures that dont fit my instagram sometimes end up on my facebook page, take a look if you want.",
+            "link": "https://www.facebook.com/boephotos"
+        },
+        {
+            "id": 5,
+            "title": "Instagram",
+            "description": "I've turned my instagram into a personal project of mine and tried to make it more interesting than other profiles out there. It's also where I showcase some of my photos.",
+            "link": "https://www.instagram.com/boemathias/"
+        },
+        {
             "id": 4,
             "title": "Gimli",
             "description": "My starting page for new tabs for improved productivity when using the web",
