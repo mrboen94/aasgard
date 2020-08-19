@@ -16,7 +16,7 @@ export default class Misc extends React.Component {
   componentDidMount() {
     axios
       .get(
-        `http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=mrboen94&api_key=5aaa8de171107513b0d4302fae8bf454&limit=10&format=json`
+        `https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=mrboen94&api_key=5aaa8de171107513b0d4302fae8bf454&limit=10&format=json`
       )
       .then((res) => {
         const topTracks = res.data.toptracks.track;
