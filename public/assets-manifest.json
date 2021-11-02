@@ -1,0 +1,7 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/githubIcon.png": "static/githubIcon-b8ab7590162bfc9073c5728c019ddef6.png",
+  "static/instagramIcon.png": "static/instagramIcon-b5909057a287641d30b734d8a9a6b938.png",
+  "static/linkedInIcon.png": "static/linkedInIcon-4edf40d4a5868efeefc5031480c1cea1.png"
+}
