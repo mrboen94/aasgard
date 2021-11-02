@@ -51,12 +51,11 @@ module.exports = {
         mergeSecurityHeaders: false,
         headers: {
           "/*": [
-            "Content-Security-Policy: frame-ancestors 'self' https://aasgard.io",
-            "X-Frame-Options: ALLOW-FROM https://aasgard.io/",
+            "X-Frame-Options: ALLOW-FROM https://www.aasgard.io",
             "X-XSS-Protection: 1; mode=block",
             "X-Content-Type-Options: nosniff",
             "Referrer-Policy: same-origin",
-            `Content-Security-Policy: frame-ancestors 'self' https://brex.sanity.studio`,
+            `Content-Security-Policy: frame-ancestors 'self' https://www.aasgard.io`,
           ],
         },
       },
