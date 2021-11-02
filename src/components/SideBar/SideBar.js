@@ -33,21 +33,6 @@ export default function SideBar() {
     <StyledDiv>
       <ImageWrapper />
       <Navigation>
-        <Link to="/">
-          <StyledText p center b>
-            HOME
-          </StyledText>
-        </Link>
-        <Link to="/projects/">
-          <StyledText p center b>
-            PROJECTS
-          </StyledText>
-        </Link>
-        <Link to="/misc/">
-          <StyledText p center b>
-            MISC
-          </StyledText>
-        </Link>
       </Navigation>
       <FlexDiv>
         <Contact />

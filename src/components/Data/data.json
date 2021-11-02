@@ -1,145 +1,149 @@
 {
-    "experience": [
+  "experience": [
     {
-        "id": 4,
-        "title": "FRONTEND DEVELOPER",
-        "company": "ISLANDGARDEN, BERGEN",
-        "description": "Frontend developer, working with react, gatsby and styled-components",
-        "year": "2020"
+      "id": 4,
+      "title": "FRONTEND DEVELOPER",
+      "company": "ISLANDGARDEN, BERGEN",
+      "description": "Frontend developer, working with react, gatsby and styled-components",
+      "year": "2020"
     },
     {
-        "id": 3,
-        "title": "JUNIOR DEVELOPER", 
-        "company": "SBANKEN, BERGEN",
-        "description": "Working mostly with frontend and React.js, some backend.",
-        "year": "2019"
+      "id": 3,
+      "title": "JUNIOR DEVELOPER",
+      "company": "SBANKEN, BERGEN",
+      "description": "Working mostly with frontend and React.js, some backend.",
+      "year": "2019"
     },
     {
-        "id": 2,
-        "title": "SUBSTITUTE PROJECT LEADER",
-        "company": "STRYVO, STRYN",
-        "description": "Project lead for the award winning steel bridge at Sognefjellet.",
-        "year": "2018"
+      "id": 2,
+      "title": "SUBSTITUTE PROJECT LEADER",
+      "company": "STRYVO, STRYN",
+      "description": "Project lead for the award winning steel bridge at Sognefjellet.",
+      "year": "2018"
     },
     {
-        "id": 1,
-        "title": "DOCUMENTATION",
-        "company": "STRYVO, STRYN",
-        "description": "Provided documentation for oil and gas from Stryvo.",
-        "year": "2017"
-    }],
-    "education": [
-        {
-            "id": 3,
-            "title": "MASTER STUDENT: VISUALIZATION",
-            "school": "UNIVERSITY OF BERGEN",
-            "description": "Will be finished in july 2022"
-        },
-        {
-            "id": 2,
-            "title": "BACHELOR DEGREE: COMPUTER SECURITY",
-            "school": "UNIVERSITY OF BERGEN",
-            "description": "Finished in july 2020"
-        },
-        {
-            "id": 1,
-            "title": "FOLKHIGHSCHOOL: PARKOUR & PROJECTS",
-            "school": "GYMNASTIKHØJSKOLEN",
-            "description": "School in Denmark with a primary focus of movement, physical activity and projects."
-        }],
-    "aboutme": [
-        {   
-            "id": 5,
-            "title": "COMMUNICATION",
-            "percent": "75%"
-        },
-        {
-            "id": 4,
-            "title": "CREATIVITY",
-            "percent": "80%"
-        },
-        {
-            "id": 3,
-            "title": "TEAMWORK",
-            "percent": "75%"
-        },
-        {
-            "id": 2,
-            "title": "LEADERSHIP",
-            "percent": "90%"
-        },
-        {
-            "id": 1,
-            "title": "ORGANIZATIONAL WORK",
-            "percent": "65%"
-        }],
-    "knowledge": [
-       {
-            "id": 6,
-            "title": "JAVA",
-            "percent": "80%"
-        },
-        {
-            "id": 5,
-            "title": "REACT",
-            "percent": "80%"
-        },
-        {
-            "id": 4,
-            "title": "PROCESSING",
-            "percent": "60%"
-        },
-        {
-            "id": 3,
-            "title": "MS OFFICE",
-            "percent": "90%"
-        },
-        {
-            "id": 2,
-            "title": "DESIGN",
-            "percent": "85%"
-        },
-        {
-            "id": 1,
-            "title": "LaTeX",
-            "percent": "65%"
-        }],
-    "projects": [
-        {
-            "id": 6,
-            "title": "Photographs",
-            "description": "Pictures that dont fit my instagram sometimes end up on my facebook page, take a look if you want.",
-            "link": "https://www.facebook.com/boephotos"
-        },
-        {
-            "id": 5,
-            "title": "Instagram",
-            "description": "I've turned my instagram into a personal project of mine and tried to make it more interesting than other profiles out there. It's also where I showcase some of my photos.",
-            "link": "https://www.instagram.com/boemathias/"
-        },
-        {
-            "id": 4,
-            "title": "Gimli",
-            "description": "My starting page for new tabs for improved productivity when using the web",
-            "link": "https://mrboen94.github.io/gimli/"
-        },
-        {
-            "id": 3,
-            "title": "Processing sketches",
-            "description": "Just a collection of some of my processing sketches",
-            "link": "https://github.com/mrboen94/Processing"
-        },
-        {
-            "id": 2,
-            "title": "Lesesalen",
-            "description": "An effort made to gather all the different information located on lesesalen. Everything from notes on subjects to playlists of the week. Take a look!",
-            "link": "https://lesesalen.com"
-        },
-        {
-            "id": 1,
-            "title": "Shakesbeer",
-            "description": "Listing of the 25 last beers checked in using the untappd app at lesesalen in Bergen.",
-            "link": "https://shakesbeer.netlify.app/"
-        }
-    ]
+      "id": 1,
+      "title": "DOCUMENTATION",
+      "company": "STRYVO, STRYN",
+      "description": "Provided documentation for oil and gas from Stryvo.",
+      "year": "2017"
+    }
+  ],
+  "education": [
+    {
+      "id": 3,
+      "title": "MASTER STUDENT: VISUALIZATION",
+      "school": "UNIVERSITY OF BERGEN",
+      "description": "Will be finished in july 2022"
+    },
+    {
+      "id": 2,
+      "title": "BACHELOR DEGREE: COMPUTER SECURITY",
+      "school": "UNIVERSITY OF BERGEN",
+      "description": "Finished in july 2020"
+    },
+    {
+      "id": 1,
+      "title": "FOLKHIGHSCHOOL: PARKOUR & PROJECTS",
+      "school": "GYMNASTIKHØJSKOLEN",
+      "description": "School in Denmark with a primary focus of movement, physical activity and projects."
+    }
+  ],
+  "aboutme": [
+    {
+      "id": 5,
+      "title": "COMMUNICATION",
+      "percent": "75%"
+    },
+    {
+      "id": 4,
+      "title": "CREATIVITY",
+      "percent": "80%"
+    },
+    {
+      "id": 3,
+      "title": "TEAMWORK",
+      "percent": "75%"
+    },
+    {
+      "id": 2,
+      "title": "LEADERSHIP",
+      "percent": "90%"
+    },
+    {
+      "id": 1,
+      "title": "ORGANIZATIONAL WORK",
+      "percent": "65%"
+    }
+  ],
+  "knowledge": [
+    {
+      "id": 6,
+      "title": "JAVA",
+      "percent": "80%"
+    },
+    {
+      "id": 5,
+      "title": "REACT",
+      "percent": "90%"
+    },
+    {
+      "id": 4,
+      "title": "THREE.JS",
+      "percent": "60%"
+    },
+    {
+      "id": 3,
+      "title": "MS OFFICE",
+      "percent": "80%"
+    },
+    {
+      "id": 2,
+      "title": "DESIGN",
+      "percent": "85%"
+    },
+    {
+      "id": 1,
+      "title": "LaTeX",
+      "percent": "65%"
+    }
+  ],
+  "projects": [
+    {
+      "id": 6,
+      "title": "Photographs",
+      "description": "Pictures that dont fit my instagram sometimes end up on my facebook page, take a look if you want.",
+      "link": "https://www.facebook.com/boephotos"
+    },
+    {
+      "id": 5,
+      "title": "Instagram",
+      "description": "I've turned my instagram into a personal project of mine and tried to make it more interesting than other profiles out there. It's also where I showcase some of my photos.",
+      "link": "https://www.instagram.com/boemathias/"
+    },
+    {
+      "id": 4,
+      "title": "Gimli",
+      "description": "My starting page for new tabs for improved productivity when using the web",
+      "link": "https://mrboen94.github.io/gimli/"
+    },
+    {
+      "id": 3,
+      "title": "Processing sketches",
+      "description": "Just a collection of some of my processing sketches",
+      "link": "https://github.com/mrboen94/Processing"
+    },
+    {
+      "id": 2,
+      "title": "Lesesalen",
+      "description": "An effort made to gather all the different information located on lesesalen. Everything from notes on subjects to playlists of the week. Take a look!",
+      "link": "https://lesesalen.com"
+    },
+    {
+      "id": 1,
+      "title": "Shakesbeer",
+      "description": "Listing of the 25 last beers checked in using the untappd app at lesesalen in Bergen.",
+      "link": "https://shakesbeer.netlify.app/"
+    }
+  ]
 }
