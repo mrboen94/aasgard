@@ -45,19 +45,23 @@ module.exports = {
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-netlify-headers`, // make sure to put last in the array
     {
       resolve: "gatsby-plugin-netlify",
       options: {
         mergeSecurityHeaders: false,
         headers: {
           "/*": [
-            "Content-Security-Policy: frame-ancestors 'self' https://*.aasgard.io/",
+            "Content-Security-Policy: frame-ancestors 'self' https://aasgard.io",
             "X-Frame-Options: ALLOW-FROM https://aasgard.io/",
+            "X-XSS-Protection: 1; mode=block",
+            "X-Content-Type-Options: nosniff",
+            "Referrer-Policy: same-origin",
+            `Content-Security-Policy: frame-ancestors 'self' https://brex.sanity.studio`,
           ],
         },
       },
     },
+    `gatsby-plugin-netlify-headers`, // make sure to put last in the array
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
